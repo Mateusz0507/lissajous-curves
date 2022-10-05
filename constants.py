@@ -1,5 +1,11 @@
-# INCREASING N OR FPS CAN DICREASE PERMORMANCE
+import pygame as pg
+import ctypes
 
+
+ctypes.windll.user32.SetProcessDPIAware()
+pg.init()
+
+# INCREASING N OR FPS CAN DICREASE PERMORMANCE
 # Number of leading circles (MAX 9)
 # Total number of curves: N^2
 N = 9
@@ -10,7 +16,7 @@ FPS = 60
 T = 4
 
 # Radius of circles (in pixels)
-RADIUS = 30
+RADIUS = 40
 
 # Spacing between circles (in pixels)
 SPACING = 15
